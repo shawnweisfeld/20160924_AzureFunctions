@@ -1,0 +1,12 @@
+{
+  "bindings": [
+    {
+      "path": "test/{blobname}.zip",
+      "name": "myBlob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "connection": "sweisfelfunzip_STORAGE"
+    }
+  ],
+  "disabled": false
+}
