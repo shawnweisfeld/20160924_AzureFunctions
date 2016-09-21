@@ -5,14 +5,14 @@
       "name": "inputStream",
       "type": "blobTrigger",
       "direction": "in",
-      "connection": "sweisfelthumb_STORAGE"
+      "connection": "StorageConnection"
     },
     {
       "path": "thumbs/{name}",
       "name": "outputStream",
       "type": "blob",
       "direction": "out",
-      "connection": "sweisfelthumb_STORAGE"
+      "connection": "StorageConnection"
     }
   ],
   "disabled": false
