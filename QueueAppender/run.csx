@@ -18,7 +18,7 @@ public static void Run(string myQueueItem, TraceWriter log)
     CloudStorageAccount strAcc = new CloudStorageAccount(creds, true);
     CloudBlobClient blobClient = strAcc.CreateCloudBlobClient();
 
-    CloudBlobContainer container = blobClient.GetContainerReference("logs");
+    CloudBlobContainer container = blobClient.GetContainerReference("queuelog");
     
     var appendBlob = container.GetAppendBlobReference("merged.log");
     if (!appendBlob.Exists())

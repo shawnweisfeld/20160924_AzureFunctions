@@ -5,7 +5,7 @@
             "name": "myQueueItem",
             "type": "queueTrigger",
             "direction": "in",
-            "connection": "sweisfelque_STORAGE"
+            "connection": "StorageConnection"
         }
     ],
     "disabled": false
