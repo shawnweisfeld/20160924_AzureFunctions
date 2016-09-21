@@ -17,5 +17,5 @@ public static HttpResponseMessage Run(HttpRequestMessage req, TraceWriter log)
     if (string.IsNullOrEmpty(name))
         return req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a 'name' parameter in the querystring");
     else
-        return req.CreateResponse(HttpStatusCode.OK, "Hello TTF " + name);
+        return req.CreateResponse(HttpStatusCode.OK, "Hello " + name);
 }
